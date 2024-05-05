@@ -1,0 +1,173 @@
+/* Page background color */
+body {
+    background-color: #f76b1c; /* Main orange color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+} 
+
+/* Navigation styles */
+#nav {
+    background-color: #333; /* Dark background color */
+    padding: 10px; /* Padding around the nav */
+}
+
+#nav ul {
+    list-style: none; /* Remove default bullet points */
+    display: flex; /* Use flex layout */
+    justify-content: center; /* Center align the navigation */
+    gap: 20px; /* Space between links */
+}
+
+#nav ul li a {
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline */
+    padding: 8px 12px; /* Padding for links */
+    border-radius: 4px; /* Rounded corners for links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover transition */
+}
+
+#nav ul li a:hover {
+    background-color: #e65b00; /* Darker orange on hover */
+    color: #fff; /* Maintain white text color */
+}
+
+/* Style for page containers */
+#page {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* White background for the main content */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the introduction */
+.intro {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    background: #e65b00; /* Darker orange background */
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Image grid styling */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style for image containers */
+.image-container {
+    position: relative; /* Relative positioning */
+}
+
+/* Style for images */
+.image-container img, .media img {
+    width: 75%;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out; /* Smooth scaling effect */
+}
+
+/* Slight enlargement on hover */
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Shadow box for image descriptions */
+.image-container p, .form-image p {
+    background: #ADD8E6; /* Darker orange background */
+    color: #fff;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Style for blockquotes in testimonials */
+blockquote {
+    background: #fff8e6; /* Light orange background */
+    padding: 20px;
+    border-left: 10px solid #f76b1c; /* Orange border */
+    margin: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Form input styling */
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    width: 90%; /* Full width of the container */
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px; /* Rounded corners */
+    border: 1px solid #e65b00; /* Orange border */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Inner shadow */
+}
+
+button[type="submit"], button[type="reset"] {
+    padding: 10px 15px; /* Button padding */
+    margin: 10px;
+    border-radius: 4px; /* Rounded corners */
+    border: none;
+    background-color: #f76b1c; /* Button color */
+    color: #fff;
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+button[type="submit"]:hover, button[type="reset"]:hover {
+    background-color: #e65b00; /* Darken on hover */
+}
+
+/* Style for footer */
+/* Style for footer */
+footer {
+    background: #000; /* Black color for the footer */
+    color: #fff;
+    border-radius: 8px;
+    padding: 20px; /* Adjusted padding for more space */
+    margin-top: 20px; /* Increased margin-top */
+    text-align: center; /* Center-align the text */
+}
+
+footer address, footer p {
+    margin: 0; /* Remove default margin for address and paragraph */
+    line-height: 1.5; /* Adjust line height for spacing */
+}
+
+footer a {
+    color: #fff; /* White text color for links */
+    text-decoration: underline; /* Underline for links */
+}
+
+/* Style for the register now box */
+.register-now-box {
+    display: inline-block; /* Inline-block to fit content */
+    padding: 15px 25px; /* Padding inside the box */
+    background-color: #f76b1c; /* Background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    text-align: center; /* Center-align the text */
+}
+
+/* Style for the register now link */
+.register-now-link {
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* White text color */
+    font-weight: bold; /* Bold text */
+    font-size: 18px; /* Adjust font size */
+    display: block; /* Make the link block level */
+}
+
+.register-now-box:hover {
+    background-color: #e65b00; /* Darken background on hover */
+}
+
+.register-now-link:hover {
+    color: #fff; /* Keep text white on hover */
+}

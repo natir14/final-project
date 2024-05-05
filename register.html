@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Membership at GYM</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <div id="nav">
+        <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="register.html">Membership</a></li>
+            <li><a href="gym.html">Homepage</a></li>
+        </ul>
+    </div>
+    
+    <div id="page">
+        <div id="h1">
+            <h1>MEMBERSHIP FORM</h1>
+        </div>
+        
+        <div class="form-container">
+            <div class="form-image">
+                <img src="download20.jpg" alt="Membership Benefits">
+                <p>Become a member today and enjoy exclusive access to our state-of-the-art facilities!</p>
+            </div>
+            
+            <form name="RegForm" action="/submit.php" onsubmit="return validateForm()" method="post">
+                <div id="content">
+                    <p>Name: <input type="text" size="50" name="na"></p>
+                    <p>Address: <input type="text" size="50" name="add"></p>
+                    <p>E-mail Address: <input type="email" size="50" name="em"></p>
+                    <p>Mobile: <input type="text" size="50" name="mo"></p>
+                    <p>Membership Type:
+                        <select name="membershipType">
+                            <option>Basic</option>
+                            <option>Premium</option>
+                            <option>Lifetime</option>
+                        </select>
+                    </p>
+                    <p>Start Date: <input type="date" name="startDate"></p>
+
+                    <!-- Payment Information -->
+                    <h2>Payment Information</h2>
+                    <p>Cardholder Name: <input type="text" id="cardName"></p>
+                    <p>Credit Card Number: <input type="text" id="cardNumber"></p>
+                    <p>Expiration Month: 
+                        <select id="expMonth">
+                            <option value="">Month</option>
+                            <option>01</option>
+                            <option>02</option>
+                            <!-- Continue for other months -->
+                        </select>
+                    </p>
+                    <p>Expiration Year: 
+                        <select id="expYear">
+                            <option value="">Year</option>
+                            <option>2024</option>
+                            <option>2025</option>
+                            <!-- Continue for other years -->
+                        </select>
+                    </p>
+                    <p>CVC: <input type="text" id="cvc"></p>
+                    <p>Credit Card Type:
+                        <label><input type="radio" name="credit" value="visa">Visa</label>
+                        <label><input type="radio" name="credit" value="amex">Amex</label>
+                        <!-- Add other credit card types as needed -->
+                    </p>
+
+                    <p>
+                        <input type="submit" value="Apply Now" id="subButton">
+                        <input type="reset" value="Clear Form" name="Reset">
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <footer>
+        <div id="footer-content">
+            <p>Visit us at CityTech Gym, 300 Jay Street, Brooklyn, NY 11201 | <a href="https://www.google.com/maps/search/?api=1&query=CityTech" target="_blank">View on Google Maps</a></p>
+            <p>Email us at <a href="mailto:info@gym.com">info@gym.com</a> | &copy; 2024 GYM SITE. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
